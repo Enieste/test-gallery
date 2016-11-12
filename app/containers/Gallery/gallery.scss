@@ -1,0 +1,95 @@
+.gallery {
+  display: block;
+
+  .gallery__icon {
+    color: #6193e1;
+    opacity: 0.6;
+    display: inline;
+    margin: auto;
+  }
+
+  .gallery__dropzone {
+    display: flex;
+    flex-flow: column;
+    font-size: 20px;
+    color: #6193e1;
+    align-items: center;
+    background-color: #f2f4f7;
+    border: 1px solid #c3d8e1;
+    width: 95%;
+    margin: 30px auto;
+    padding: 30px 0;
+  }
+
+  .gallery__dropzone_text {
+    margin: auto;
+  }
+
+  .gallery__tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: stretch;
+  }
+
+  .gallery__tabs_item {
+    padding: 15px 25px;
+    color: #6193e1;
+    margin-bottom: -1px;
+    margin-left: 0;
+    text-decoration: none;
+
+     &.gallery__tabs_item-empty {
+       color: gray;
+     }
+
+  }
+
+  .gallery__tabs_item:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    z-index: 10;
+  }
+
+  .gallery__tabs_item-active {
+    position: relative;
+    color: #000;
+    background: #fff;
+  }
+
+  .gallery__tabs_item-active:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    box-shadow: 0 -2px 5px #939393;
+  }
+
+  .gallery__border {
+    background-color: #ffffff;
+    display: flex;
+    box-shadow: 0 5px 5px #939393;
+    margin-top: -5px;
+  }
+
+  .gallery__board {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ffffff;
+    padding:  15px;
+    min-height: 95%;
+    box-shadow: 0 0 5px #939393;
+    justify-content: space-between;
+  }
+
+  .gallery__board_img {
+    margin: 1%;
+    width: 31%;
+  }
+
+}
